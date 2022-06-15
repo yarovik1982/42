@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/style.css">
+   <title>Template</title>
+   <script src="./js/main.js" type="module" defer></script>
+</head>
+<body>
+   <div class="layout none">
+      
+         <form action="#" class="layout__form form">
+            <div class="form__inner">
+               <div class="form__row">
+                  <h2 class="form__title">Вход</h2>
+                  <span class="form__close">&times;</span>
+               </div>
+
+               <div class="form__row">
+                  <label for="name-login" class="form__label">Ваше имя</label>
+                  <input type="text" class="form__input" id="name-login" name="nameLogin">
+               </div>
+               
+               <div class="form__row">
+                  <label for="password-login" class="form__label">Ваш пароль</label>
+                  <input type="password" class="form__input" id="password-login" name="passwordLogin">
+               </div>
+               
+               <div class="form__row-checkbox">
+                  <input type="checkbox" name="remember" id="remember" class="form__input-checkbox">
+                  <label for="remember" class="form__label">Запомнить меня</label>
+               </div>
+               <button type="submit" class="form__btn">Войти</button>
+               <div class="form__row">
+                  <p class="form__text">Нет аккаунта?</p>
+                  <a href="#" class="form__link">Зарегстрироваться</a>
+               </div>
+            </div>
+         </form>
+      
+   </div>
+
+   <div class="wrapper">
+      <header class="header">
+         <div class="container">
+            <div class="header__row">
+               <div class="header__logo">
+                  <img src="./images/logo-42.svg" alt="logo" width="15%">
+               </div>
+               <nav class="nav">
+                  <ul class="nav__list list">
+                     <li class="list__item"><a href="./home.html" class="list__link">Конфигуратор</a></li>
+                     <li class="list__item"><a href="./app.html" class="list__link">Приложение</a></li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+      </header>
+
+      <main class="main">
+         <div class="container">
+            <div class="main__content content">
+               <div class="content__navbar navbar">
+                  <ul class="navbar__list">
+                     <li data-href="tab-1" class="navbar__item tab tab-active">Справочники</li>
+                     <li data-href="tab-2" class="navbar__item tab">Документы</li>
+                     <li data-href="tab-3" class="navbar__item tab">Отчеты</li>
+                     <li data-href="tab-4" class="navbar__item tab">***</li>
+                  </ul>
+               </div>
+               <div class="content__inner">
+                  <form action="#" class="content__form  content__form-active" id="tab-1" data-save="0">
+                     <div class="tab__form-row">
+                        <h2 class="tab__form-title">Справочник (Новый<span class="tab__form-title-star"></span>)</h2>
+                     </div>
+
+                     <div class="tab__form-body">
+                        <div class="tab__form-inner">
+                           <div class="tab__form-navbar">
+                              <ul class="navbar__list">
+                                 <li class="navbar__item" data-href="f-tab-1">Основные</li>
+                                 <li class="navbar__item" data-href="f-tab-2">Данные</li>
+                                 <li class="navbar__item" data-href="f-tab-3"></li>
+                                 <li class="navbar__item" data-href="f-tab-4"></li>
+                                 <li class="navbar__item" data-href="f-tab-5"></li>
+                                 <li class="navbar__item" data-href="f-tab-6"></li>
+                                 <li class="navbar__item" data-href="f-tab-7"></li>  
+                              </ul>
+                           </div>
+                           <div class="tab__form-sidebar"></div>
+                        </div>
+                     </div>
+                  </form> 
+                  
+                  <form action="#" class="content__form" id="tab-2" data-save="0">
+                     <div class="tab__form-row">
+                        <h2 class="tab__form-title">Документ (Новый<span class="tab__form-title-star"></span>)</h2>
+                     </div>
+                  </form> 
+
+                  <form action="#" class="content__form" id="tab-3" data-save="0">
+                     <div class="tab__form-row">
+                        <h2 class="tab__form-title">Отчет (Новый<span class="tab__form-title-star"></span>)</h2>
+                     </div>
+                  </form> 
+
+                  <form action="#" class="content__form" id="tab-4" data-save="0">
+                     <div class="tab__form-row">
+                        <h2 class="tab__form-title">(Новый<span class="tab__form-title-star"></span>)</h2>
+                     </div>
+                  </form> 
+
+               </div>
+            </div>
+         </div>
+      </main>
+
+      <footer class="footer">
+         <div class="container">
+            <p class="footer__info">&copy; 2022</p>
+         </div>
+      </footer>
+
+   </div>
+
+
+
+
+</body>
+</html>
+
